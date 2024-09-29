@@ -1,4 +1,6 @@
 import axios from 'axios';
+import useSWR from 'swr';
+const fetcher = (url) => fetch(url).then((res) => res.json());
 
 const API_USERNAME = process.env.MOBILE_DE_API_USERNAME;
 const API_PASSWORD = process.env.MOBILE_DE_API_PASSWORD;
@@ -101,7 +103,7 @@ export async function getVehicles(): Promise<Vehicle[]> {
         password: API_PASSWORD!,
       },
       params: {
-        maxResults: 1000,
+        
       },
     });
 
