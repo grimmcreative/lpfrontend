@@ -11,6 +11,7 @@ export default async function VehicleDetail({ params }: { params: { id: string }
         <h1 className="text-3xl font-bold mb-4">Fahrzeug nicht gefunden</h1>
         <p>Das angeforderte Fahrzeug mit der ID {params.id} konnte nicht gefunden werden.</p>
         <p>Bitte überprüfen Sie die ID und versuchen Sie es erneut.</p>
+        <h2>hier sollte was stehen</h2>
       </div>
     );
   }
