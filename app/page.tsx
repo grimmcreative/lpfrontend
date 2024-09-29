@@ -19,7 +19,7 @@ export default async function Home() {
 
   return (
     <div>
-      <h1>Fahrzeugliste Single Client 4</h1>
+      <h1>Fahrzeugliste Single Client 5</h1>
       <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {vehicles.map((vehicle: Vehicle) => (
           <li key={vehicle.id} className="border rounded-lg p-4 shadow-md">
