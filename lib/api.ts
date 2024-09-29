@@ -101,7 +101,7 @@ export async function getVehicles(): Promise<Vehicle[]> {
         password: API_PASSWORD!,
       },
       params: {
-        maxResults: 20,
+        maxResults: 1000,
       },
     });
 
